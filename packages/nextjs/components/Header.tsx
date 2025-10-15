@@ -101,7 +101,7 @@ export const Header = () => {
             <Logo size={24} />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">Scaffold-Lisk</span>
+            <span className="font-bold leading-tight">SandBlock</span>
             <span className="text-xs">Ethereum dev stack</span>
           </div>
         </Link>

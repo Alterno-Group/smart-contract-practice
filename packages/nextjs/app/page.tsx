@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <h1 className="text-center">
           <span className="block text-base mb-2">Welcome to</span>
           <span className="flex items-end gap-4 text-5xl font-bold">
-            <Logo size={48} /> Scaffold-Lisk{" "}
+            <Logo size={48} /> SandBlock{" "}
           </span>
         </h1>
         <div className="flex btn btn-md bg-base-100 w-fit justify-center mb-4 items-center space-x-2">
@@ -30,11 +30,7 @@ const Home: NextPage = () => {
           </code>
         </p>
         <p className="text-center text-base text-slate-400">
-          Edit your smart contract{" "}
-          <code className="italic bg-base-100 text-white p-1 rounded-md text-base font-bold max-w-full break-words break-all inline-block">
-            YourContract.sol
-          </code>{" "}
-          in{" "}
+          Add/Edit your smart contract in{" "}
           <code className="italic bg-base-100 text-white p-1 rounded-md text-base font-bold max-w-full break-words break-all inline-block">
             packages/hardhat/contracts
           </code>
