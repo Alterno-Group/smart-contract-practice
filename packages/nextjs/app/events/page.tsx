@@ -10,21 +10,23 @@ import { useScaffoldEventHistory } from "~~/hooks/scaffold-eth";
 const Events: NextPage = () => {
   // State for managing the page
   const { isConnected } = useAccount();
+  // const { targetNetwork } = useTargetNetwork();
   const [eventType, setEventType] = useState<"token" | "nft">("token");
+
   // Get token transfer events
   const { data: tokenEvents, isLoading: tokenLoading } = useScaffoldEventHistory({
     contractName: "SandBlockToken",
     eventName: "Transfer",
-    fromBlock: 0n,
-    watch: true,
+    fromBlock: 27982525n,
+    watch: false,
   });
 
   // Get NFT transfer events
   const { data: nftEvents, isLoading: nftLoading } = useScaffoldEventHistory({
     contractName: "SandBlockNFT",
     eventName: "Transfer",
-    fromBlock: 0n,
-    watch: true,
+    fromBlock: 27982348n,
+    watch: false,
   });
 
   // Determine which events to show based on selected tab
