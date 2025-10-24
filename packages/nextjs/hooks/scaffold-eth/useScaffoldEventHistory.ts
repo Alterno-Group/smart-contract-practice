@@ -57,6 +57,7 @@ export const useScaffoldEventHistory = <
   const readEvents = async (fromBlock?: bigint) => {
     setIsLoading(true);
     try {
+      console.log(deployedContractData);
       if (!deployedContractData) {
         throw new Error("Contract not found");
       }

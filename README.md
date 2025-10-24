@@ -65,3 +65,17 @@ Mint NFT
 <div align="center" style="margin-top: 24px;">
   <img alt="Mint NFT" src="./packages/nextjs/public/mint-nft.jpg" width="100%">
 </div>
+
+<h2>Week 3: Display Contract Events & Transaction History</h2>
+
+ERC-20 events:
+
+<div align="center" style="margin-top: 24px;">
+  <img alt="Token events" src="./packages/nextjs/public/token-events.jpg" width="100%">
+</div>
+
+NFT events:
+
+<div align="center" style="margin-top: 24px;">
+  <img alt="NFT events" src="./packages/nextjs/public/nft-events.jpg" width="100%">
+</div>
