@@ -1,5 +1,4 @@
-<h1>Lisk Onboarding Challenge - Week 1: Hello Token + NFT</h1>
-<h2>Deploy and verify ERC20 token and ERC721 NFT contracts on Lisk Sepolia</h2>
+<h1>Lisk Onboarding Challenge</h1>
 
 This repo is a fork of **[Scaffold-Lisk](https://github.com/LiskHQ/scaffold-lisk)**. Following Scaffold-Lisk guideline, we create and deploy smart contracts (ERC-20 and ERC-721) and build a simple user interfaces that interact with our contracts.
 
@@ -11,7 +10,9 @@ This repo is a fork of **[Scaffold-Lisk](https://github.com/LiskHQ/scaffold-lisk
 - Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
 - [Git](https://git-scm.com/downloads)
 
-## Deploy contracts to Lisk Sepolia testnet
+<h2>Week 1: Hello Token + NFT</h2>
+
+## Deploy ERC20 Token and ERC721 NFT contracts to Lisk Sepolia testnet
 
 After update `./packages/hardhat/.env` to setup `DEPLOYER_PRIVATE_KEY`, we deploy smart contracts with `yarn deploy --network liskSepolia`. It cost [0.000000621789 ETH](https://sepolia-blockscout.lisk.com/tx/0xe36b73cb2ba7555d9770b9b210c434173bf84aee0ce846e74b0f589ec34982a2) for our ERC-20 contract and [0.000001156845 ETH](https://sepolia-blockscout.lisk.com/tx/0x1cf9010f72d8972c9758f7d0cde5beeaddaccb591f4123946d507437411f37f4) for our ERC-721 contract (Gas fee).
 
@@ -37,4 +38,30 @@ yarn hardhat-verify --network liskSepolia --contract contracts/SandBlockNFT.sol:
 
 <div align="center" style="margin-top: 24px;">
   <img alt="Verify ERC-721 contract" src="./packages/nextjs/public/verify-erc721-contract.jpg" width="100%">
+</div>
+
+<h2>Week 2: Frontend Connect</h2>
+
+## Build ERC-20 Token & NFT Interface (Using DaisyUI)
+
+Home UI: Show token ballance, transfer token and mint NFT
+
+<div align="center" style="margin-top: 24px;">
+  <img alt="ballance, transfer, mint" src="./packages/nextjs/public/ballance-transfer-mint.jpg" width="100%">
+</div>
+
+Transfer ERC-20 Token
+
+<div align="center" style="margin-top: 24px;">
+  <img alt="Transfer token" src="./packages/nextjs/public/transfer-token.jpg" width="100%">
+</div>
+
+<div align="center" style="margin-top: 24px;">
+  <img alt="Transfer with alert" src="./packages/nextjs/public/transfer-token-fee-alert.jpg" width="100%">
+</div>
+
+Mint NFT
+
+<div align="center" style="margin-top: 24px;">
+  <img alt="Mint NFT" src="./packages/nextjs/public/mint-nft.jpg" width="100%">
 </div>

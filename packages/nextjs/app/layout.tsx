@@ -9,8 +9,8 @@ const baseUrl = process.env.VERCEL_URL
   : `http://localhost:${process.env.PORT || 3000}`;
 const imageUrl = `${baseUrl}/thumbnail.jpg`;
 
-const title = "Scaffold-Lisk App";
-const titleTemplate = "%s | Scaffold-Lisk";
+const title = "SandBlock Sample App";
+const titleTemplate = "%s | SandBlock Sample App";
 const description = "Built with 🏗 Scaffold-Lisk";
 
 export const metadata: Metadata = {
